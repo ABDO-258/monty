@@ -52,6 +52,11 @@ void execute_monty_cmd(void)
 						{"swap", monty_swap},
 						{"add", monty_add},
 						{"nop", monty_nop},
+						{"sub", monty_sub},
+						{"div", monty_div},
+						{"mul", monty_mul},
+						{"pchar", monty_pchar},
+						{"pstr", monty_pstr},
 						{NULL, NULL},
 				};
 	int i = 0;
