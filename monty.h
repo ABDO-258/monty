@@ -60,6 +60,7 @@ void monty_pint(stack_t **head, unsigned int line_num);
 void monty_pop(stack_t **head, unsigned int line_num);
 void monty_swap(stack_t **head, unsigned int line_num);
 void monty_add(stack_t **head, unsigned int line_num);
+void monty_nop(stack_t **head, unsigned int line_num);
 
 
 void free_stack(stack_t **head);

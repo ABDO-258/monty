@@ -51,6 +51,7 @@ void execute_monty_cmd(void)
 						{"pop", monty_pop},
 						{"swap", monty_swap},
 						{"add", monty_add},
+						{"nop", monty_nop},
 						{NULL, NULL},
 				};
 	int i = 0;
@@ -121,6 +122,7 @@ void commande_line(void)
 				fprintf(stderr, "L%d: usage: push integer\n",
 						inform_2.line_num);
 				free(inform_2.line);
+				free_stack(&inform_2.head);
 				fclose(inform_2.file_ptr);
 				exit(EXIT_FAILURE);
 			}

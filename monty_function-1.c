@@ -26,3 +26,19 @@ void monty_add(stack_t **head, unsigned int line_num)
 	}
 
 }
+
+/**
+ * monty_nop - do noting of a doubly linked list
+ * @head: points to head of the list
+ * @line_num: line number
+ *
+ * Description: doubly linked list node structure
+ *
+ */
+
+void monty_nop(stack_t **head, unsigned int line_num)
+{
+	(void)*head;
+	(void)line_num;
+	return;
+}
