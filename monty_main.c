@@ -55,6 +55,7 @@ void execute_monty_cmd(void)
 						{"sub", monty_sub},
 						{"div", monty_div},
 						{"mul", monty_mul},
+						{"mod", monty_mod},
 						{"pchar", monty_pchar},
 						{"pstr", monty_pstr},
 						{NULL, NULL},
