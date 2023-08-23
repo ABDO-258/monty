@@ -70,24 +70,11 @@ void monty_pstr(stack_t **head, unsigned int line_num)
 
 	(void)line_num;
 	current = (*head);
-
-	if (current == NULL)
+	while (current != NULL && current->n > 0 &&
+			current->n <= 127 && current->n != 0)
 	{
-		printf("\n");
+		printf("%c", (char)current->n);
+		current = current->next;
 	}
-	else
-	{
-		while (current != NULL)
-		{
-			if (current->n > 0 && current->n <= 127 && current->n != 0)
-				printf("%c", (char)current->n);
-			if (current->n == 0)
-			{
-				printf("\n");
-				return;
-			}
-			current = current->next;
-		}
-		printf("\n");
-	}
+	printf("\n");
 }
