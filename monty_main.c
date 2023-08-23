@@ -16,7 +16,7 @@ void free_stack(stack_t **head)
 	current = (*head);
 	while (current != NULL)
 	{
-		printf("+++%d+++\n", current->n);
+		/*printf("+++%d+++\n", current->n);*/
 		temp = current;
 		current = current->next;
 		free(temp);
@@ -125,8 +125,8 @@ void commande_line(void)
 				exit(EXIT_FAILURE);
 			}
 		}
-		printf("cmdline = %s in line %d value = %s\n",
-				inform_2.cmdline[0], inform_2.line_num, inform_2.cmdline[1]);
+		/* printf("cmdline = %s in line %d value = %s\n",*/
+		/*		inform_2.cmdline[0], inform_2.line_num, inform_2.cmdline[1]);*/
 		execute_monty_cmd();
 	}
 }
