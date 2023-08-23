@@ -136,7 +136,7 @@ void monty_mod(stack_t **head, unsigned int line_num)
 {
 	if ((*head) == NULL || (*head)->next == NULL)
 	{
-		fprintf(stderr, "L%d: can't div, stack too short\n", line_num);
+		fprintf(stderr, "L%d: can't mod, stack too short\n", line_num);
 		free_stack(&inform_2.head);
 		free(inform_2.line);
 		fclose(inform_2.file_ptr);
