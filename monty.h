@@ -74,6 +74,7 @@ void monty_mul(stack_t **head, unsigned int line_num);
 void monty_mod(stack_t **head, unsigned int line_num);
 void monty_pchar(stack_t **head, unsigned int line_num);
 void monty_pstr(stack_t **head, unsigned int line_num);
+void monty_rotl(stack_t **head, unsigned int line_num);
 
 void free_stack(stack_t **head);
 

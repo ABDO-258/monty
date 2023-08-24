@@ -58,6 +58,7 @@ void execute_monty_cmd(void)
 						{"mod", monty_mod},
 						{"pchar", monty_pchar},
 						{"pstr", monty_pstr},
+						{"rotl", monty_rotl},
 						{NULL, NULL},
 				};
 	int i = 0;

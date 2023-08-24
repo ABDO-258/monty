@@ -78,3 +78,33 @@ void monty_pstr(stack_t **head, unsigned int line_num)
 	}
 	printf("\n");
 }
+
+
+/**
+ * monty_rotl - make the last elemet top of stack
+ * by the top element of the stack
+ * @head: points to head of the list
+ * @line_num: line number
+ *
+ * Description: doubly linked list node structure
+ *
+ */
+
+void monty_rotl(stack_t **head, unsigned int line_num)
+{
+	stack_t *last;
+
+	(void)line_num;
+	if ((*head) == NULL || (*head)->next == NULL)
+		return;
+	last = (*head);
+	while (last->next != NULL)
+	{
+		last = last->next;
+	}
+	last->next = (*head);
+    (*head)->prev = last;
+    (*head) = (*head)->next;
+    (*head)->prev->next = NULL;
+    (*head)->prev = NULL;
+}
